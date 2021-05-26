@@ -35,30 +35,22 @@
     </p>
 
 <script>
+    getText('http://localhost:5001/weapons');
+    async function getText(file) {
+        let x = await fetch(file);
+        let y = await x.json();
 
+        var body = document.getElementById("weaponBody") 
 
-getText("http://localhost:5000/weapons");
-async function getText(file) {
-    let x = await fetch(file);
-    let y = await x.json();
-
-    console.log(y.recordset)
-
-    var body = document.getElementById("weaponBody") 
-
-    y.recordset.forEach( wep => {
-        console.log(wep)
-        var row = document.createElement("tr");
-        Object.keys(wep).forEach( key => {
-            console.log(key, wep[key])
-            var iCol = document.createElement("td");
-            iCol.innerHTML = wep[key];
-            row.appendChild(iCol);
+        y.recordset.forEach( wep => {
+            var row = document.createElement("tr");
+            Object.keys(wep).forEach( key => {
+                var iCol = document.createElement("td");
+                iCol.innerHTML = wep[key];
+                row.appendChild(iCol);
+            })
+            body.appendChild(row)
         })
-        body.appendChild(row)
-    })
-
-    // document.getElementById("table").innerHTML = y;
 }
 </script>
 

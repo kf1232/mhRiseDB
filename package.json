@@ -4,7 +4,6 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "prestart": "npm update",
     "start": "nodemon src/index"
   },
   "keywords": [],

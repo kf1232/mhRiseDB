@@ -27,7 +27,7 @@
     </p>
 
 <script>
-getText("http://localhost:5000/items");
+getText("http://localhost:5001/items");
 
 async function getText(file) {
     let x = await fetch(file);
@@ -48,8 +48,6 @@ async function getText(file) {
         })
         body.appendChild(row)
     })
-
-    // document.getElementById("table").innerHTML = y;
 }
 </script>
 
