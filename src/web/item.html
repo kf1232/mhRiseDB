@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Weapon Craft List</h1>
+    <list>
+        <li>
+            <a href='item.html'><button>Items</button></a>
+        </li>
+        <li>
+            <a href='monster.html'><button>Monster</button></a>
+        </li>
+        <li>
+            <a href='weapon.html'><button>Weapon</button></a>
+        </li>
+    </list>
+    <p>
+        <table>
+            <thead>
+                <tr>
+                    <th>itemName </th>
+                </tr>
+            </thead>
+            <tbody id='weaponBody'>
+
+            </tbody>
+        </table>
+    </p>
+
+<script>
+getText("http://localhost:5000/items");
+
+async function getText(file) {
+    let x = await fetch(file);
+    let y = await x.json();
+
+    console.log(y.recordset)
+
+    var body = document.getElementById("weaponBody") 
+
+    y.recordset.forEach( wep => {
+        console.log(wep)
+        var row = document.createElement("tr");
+        Object.keys(wep).forEach( key => {
+            console.log(key, wep[key])
+            var iCol = document.createElement("td");
+            iCol.innerHTML = wep[key];
+            row.appendChild(iCol);
+        })
+        body.appendChild(row)
+    })
+
+    // document.getElementById("table").innerHTML = y;
+}
+</script>
+
+</body>
+</html>
