@@ -14,18 +14,23 @@
         </li>
     </list>
     <p>
+        <form>
+            <label for="Weapontype_Label">Select a weapon Type:</label>
+            <select name='WeaponType_Name' id='WeaponType_ID'>
+                <option value="AllWeapons">All Weapons</option>
+            </select>
+            <input type="submit" >
+        </form>
+        
+        </select>
         <table>
             <thead>
                 <tr>
                     <th style='width:200px; text-align:center'>weaponName </th>
-                    <th>craftOne </th>
-                    <th># </th>
-                    <th>craftTwo </th>
-                    <th># </th>
-                    <th>craftThree  </th>
-                    <th>#  </th>
-                    <th>craftFour   </th>
-                    <th>#   </th>
+                    <th>craftOne  </th> <th>#</th>
+                    <th>craftTwo  </th> <th>#</th>
+                    <th>craftThree</th> <th>#</th>
+                    <th>craftFour </th> <th>#</th>
                 </tr>
             </thead>
             <tbody id='weaponBody'>
@@ -35,7 +40,87 @@
     </p>
 
 <script>
-    getText('http://localhost:5001/weapons');
+    getList('http://localhost:5001/weaponTypes')
+
+    switch(GetURLParameter(`WeaponType_Name`)){
+        case `AllWeapons`:
+            getText(`http://localhost:5001/weapons`)
+            break;
+        case `Bow`:
+            getText(`http://localhost:5001/weapons/BO`)
+            break;
+        case `Charge+Blade`: 
+            getText(`http://localhost:5001/weapons/CB`)
+            break;
+        case `Dual+Blades`: 
+            getText(`http://localhost:5001/weapons/DB`)
+            break;
+        case `Great+Sword`: 
+            getText(`http://localhost:5001/weapons/GS`)
+            break;
+        case `Gunlance`: 
+            getText(`http://localhost:5001/weapons/GL`)
+            break;
+        case `Hammer`: 
+            getText(`http://localhost:5001/weapons/HA`)
+            break;
+        case `Heavy+Bowgun`: 
+            getText(`http://localhost:5001/weapons/HB`)
+            break;
+        case `Hunting+Horn`: 
+            getText(`http://localhost:5001/weapons/HH`)
+            break;
+        case `Insect+Glaive`: 
+            getText(`http://localhost:5001/weapons/IG`)
+            break;
+        case `Lance`: 
+            getText(`http://localhost:5001/weapons/LA`)
+            break;
+        case `Light+Bowgun`: 
+            getText(`http://localhost:5001/weapons/LB`)
+            break;
+        case `Long+Sword`: 
+            getText(`http://localhost:5001/weapons/LS`)
+            break;
+        case `Switch+Axe`: 
+            getText(`http://localhost:5001/weapons/SA`)
+            break;
+        case `Sword+and+Shield`: 
+            getText(`http://localhost:5001/weapons/SH`)
+            break;
+        default: alert(`Nothing Gained, Nothing Lost`)
+    }
+
+    function GetURLParameter(sParam)
+    {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) 
+        {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam) 
+            {
+                return sParameterName[1];
+            }
+        }
+    }
+
+    function weaponController(input){
+        alert(input)
+    }
+
+    async function getList(file){
+        let x = await fetch(file);
+        let y = await x.json();
+
+        var body = document.getElementById("WeaponType_ID")
+        y.recordset.forEach( wep=> {
+            var wepObj = document.createElement("option")
+            wepObj.text=wep.weaponType
+            body.appendChild(wepObj)
+        })
+        
+    }
     
     async function getText(file) {
         let x = await fetch(file);
