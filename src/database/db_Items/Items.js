@@ -4,7 +4,7 @@ const sql_Items = require(`./sql_Items`)
 
 async function readItems(){
     try{
-        await sql.connect(env.CONFIG)
+        await sql.connect(env.RO_CONFIG)
         const result = await sql.query(sql_Items.selectItems)
         await sql.close()
         return result

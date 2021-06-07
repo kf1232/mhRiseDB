@@ -4,7 +4,7 @@ const sql_WeaponTypes = require(`./sql_WeaponTypes`)
 
 async function readWeaponTypes(){
     try{
-        await sql.connect(env.CONFIG)
+        await sql.connect(env.RO_CONFIG)
         const result = await sql.query(sql_WeaponTypes.selectWeaponTypes)
         await sql.close()
         return result

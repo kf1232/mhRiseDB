@@ -5,7 +5,7 @@ const sql_Monsters = require(`./sql_Monsters`)
 
 async function readMonsters(){
     try{
-        await sql.connect(env.CONFIG)
+        await sql.connect(env.RO_CONFIG)
         const result = await sql.query(sql_Monsters.selectMonsters)
         await sql.close()
         return result
