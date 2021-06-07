@@ -1,10 +1,10 @@
 const express = require('express')
 var dbAPI = express.Router()
 
-var db_Items = require('../database/items')
-var db_Weapons = require('../database/weapons')
-var db_WeaponTypes = require('../database/weponTypes')
-var db_Monsters = require('../database/monsters')
+var db_Items = require('../database/db_Items/Items')
+var db_Weapons = require('../database/db_Weapons/Weapons')
+var db_WeaponTypes = require('../database/db_WeaponTypes/weponTypes')
+var db_Monsters = require('../database/db_Monsters/Monsters')
 
 /*----------------------------------------------------------------------*/
 /* Endpint API                                                          */

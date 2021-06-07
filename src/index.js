@@ -7,6 +7,7 @@ app.use(cors())
 app.options('*', cors()) // include before other routes
 
 app.use(require('./routes/testRoutes'))
+app.use(require(`./routes/routes_Weapons`))
 
 const port = env.PORT || 5000
 app.listen(port, ()=>{

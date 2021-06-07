@@ -1,0 +1,409 @@
+{
+	"info": {
+		"_postman_id": "fe7b6a3f-1cfe-4a7b-a65c-6e868e74a695",
+		"name": "mh_RiseDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Information",
+			"item": [
+				{
+					"name": "/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Items",
+			"item": [
+				{
+					"name": "/items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/items",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"items"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Weapons",
+			"item": [
+				{
+					"name": "/weapons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/weapons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weapons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/weapons/BO",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/weapons/BO",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weapons",
+								"BO"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/weapons/CB",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/weapons/CB",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weapons",
+								"CB"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/weapons/DB",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/weapons/DB",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weapons",
+								"DB"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/weapons/GS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/weapons/GS",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weapons",
+								"GS"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/weapons/GL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/weapons/GL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weapons",
+								"GL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/weapons/HA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/weapons/HA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weapons",
+								"HA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/weapons/HB",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/weapons/HB",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weapons",
+								"HB"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/weapons/HH",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/weapons/HH",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weapons",
+								"HH"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/weapons/IG",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/weapons/IG",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weapons",
+								"IG"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/weapons/LA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/weapons/LS",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weapons",
+								"LS"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/weapons/LB",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/weapons/LB",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weapons",
+								"LB"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/weapons/LS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/weapons/LS",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weapons",
+								"LS"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/weapons/SA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/weapons/SA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weapons",
+								"SA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/weapons/SH",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/weapons/SH",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weapons",
+								"SH"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WeaponTypes",
+			"item": [
+				{
+					"name": "/weaponTypes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/weaponTypes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weaponTypes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Monsters",
+			"item": [
+				{
+					"name": "/monsters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/monsters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"monsters"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
