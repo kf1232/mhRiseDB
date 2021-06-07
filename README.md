@@ -1,5 +1,5 @@
 # Monster Hunter: Rise Toolkit
-###### Information
+###### [Information](https://github.com/kf1232/mhRiseDB/blob/main/README.md#information)
 ###### Setup and Configuration
 ###### Roadmap
 ###### Notes
