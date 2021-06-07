@@ -1,6 +1,6 @@
 # Monster Hunter: Rise Toolkit
 ###### [Information](https://github.com/kf1232/mhRiseDB/blob/main/README.md#information)
-###### [Setup and Configuration](https://github.com/kf1232/mhRiseDB/blob/main/README.md#Setup and Configuration)
+###### [Setup and Configuration](https://github.com/kf1232/mhRiseDB/blob/main/README.md#Setup-and-Configuration)
 ###### [Roadmap](https://github.com/kf1232/mhRiseDB/blob/main/README.md#Roadmap)
 ###### [Notes](https://github.com/kf1232/mhRiseDB/blob/main/README.md#Notes)
 ###### [FAQ](https://github.com/kf1232/mhRiseDB/blob/main/README.md#FAQ)
