@@ -2,9 +2,11 @@ const sql = require('mssql')
 const env = require('../../../env.js')
 const sql_Weapons = require(`./sql_Weapons`)
 
+const config = env.RO_CONFIG
+
 async function readWeapons(){
     try{
-        await sql.connect(env.RO_CONFIG)
+        await sql.connect(config)
         const result = await sql.query(sql_Weapons.selectWeapons)
         await sql.close()
         return result
@@ -15,7 +17,7 @@ async function readWeapons(){
 
 async function readBow(){
     try{
-        await sql.connect(env.RO_CONFIG)
+        await sql.connect(config)
         const result = await sql.query(sql_Weapons.selectBow)
         await sql.close()
         return result
@@ -26,7 +28,7 @@ async function readBow(){
 
 async function readChargeBlade(){
     try{
-        await sql.connect(env.RO_CONFIG)
+        await sql.connect(config)
         const result = await sql.query(sql_Weapons.selectChargeBlade)
         await sql.close()
         return result
@@ -37,7 +39,7 @@ async function readChargeBlade(){
 
 async function readDualBlades(){
     try{
-        await sql.connect(env.RO_CONFIG)
+        await sql.connect(config)
         const result = await sql.query(sql_Weapons.selectDualBlades)
         await sql.close()
         return result
@@ -48,7 +50,7 @@ async function readDualBlades(){
 
 async function readGreatSwords(){
     try{
-        await sql.connect(env.RO_CONFIG)
+        await sql.connect(config)
         const result = await sql.query(sql_Weapons.selectGreatSword)
         await sql.close()
         return result
@@ -59,7 +61,7 @@ async function readGreatSwords(){
 
 async function readGunlance(){
     try{
-        await sql.connect(env.RO_CONFIG)
+        await sql.connect(config)
         const result = await sql.query(sql_Weapons.selectGunlance)
         await sql.close()
         return result
@@ -70,7 +72,7 @@ async function readGunlance(){
 
 async function readHammer(){
     try{
-        await sql.connect(env.RO_CONFIG)
+        await sql.connect(config)
         const result = await sql.query(sql_Weapons.selectHammer)
         await sql.close()
         return result
@@ -81,7 +83,7 @@ async function readHammer(){
 
 async function readHeavyBowgun(){
     try{
-        await sql.connect(env.RO_CONFIG)
+        await sql.connect(config)
         const result = await sql.query(sql_Weapons.selectHeavyBowgun)
         await sql.close()
         return result
@@ -92,7 +94,7 @@ async function readHeavyBowgun(){
 
 async function readHuntingHorn(){
     try{
-        await sql.connect(env.RO_CONFIG)
+        await sql.connect(config)
         const result = await sql.query(sql_Weapons.selectHuntingHorn)
         await sql.close()
         return result
@@ -103,7 +105,7 @@ async function readHuntingHorn(){
 
 async function readInsectGlaive(){
     try{
-        await sql.connect(env.RO_CONFIG)
+        await sql.connect(config)
         const result = await sql.query(sql_Weapons.selectInsectGlaive)
         await sql.close()
         return result
@@ -114,7 +116,7 @@ async function readInsectGlaive(){
 
 async function readLance(){
     try{
-        await sql.connect(env.RO_CONFIG)
+        await sql.connect(config)
         const result = await sql.query(sql_Weapons.selectLance)
         await sql.close()
         return result
@@ -125,7 +127,7 @@ async function readLance(){
 
 async function readLightBowgun(){
     try{
-        await sql.connect(env.RO_CONFIG)
+        await sql.connect(config)
         const result = await sql.query(sql_Weapons.selectLightBowgun)
         await sql.close()
         return result
@@ -136,7 +138,7 @@ async function readLightBowgun(){
 
 async function readLongSword(){
     try{
-        await sql.connect(env.RO_CONFIG)
+        await sql.connect(config)
         const result = await sql.query(sql_Weapons.selectLongSword)
         await sql.close()
         return result
@@ -147,7 +149,7 @@ async function readLongSword(){
 
 async function readSwitchAxe(){
     try{
-        await sql.connect(env.RO_CONFIG)
+        await sql.connect(config)
         const result = await sql.query(sql_Weapons.selectSwitchAxe)
         await sql.close()
         return result
@@ -159,7 +161,7 @@ async function readSwitchAxe(){
 
 async function readSwordShield(){
     try{
-        await sql.connect(env.RO_CONFIG)
+        await sql.connect(config)
         const result = await sql.query(sql_Weapons.selectSwordShield)
         await sql.close()
         return result
