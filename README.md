@@ -1,6 +1,32 @@
-[Postman Team Link](https://app.getpostman.com/join-team?invite_code=91649c0f56ec356263aee4d8160a33ec&ws=6b97234e-7bfa-43ff-9247-5d1a329f4440) 
+# Monster Hunter: Rise Toolkit
+###### Information
+###### Setup and Configuration
+###### Roadmap
+###### Notes
+###### FAQ
+
+
+## Information
+
+
+## Setup and Configuration
+
+
+## Roadmap
+
+
+## Notes
+
+
+## FAQ
+
+
 
 SETUP:
+Database-
+
+
+    Applicaiton-
 Install DB + DMBS systems, configure .env copy to .env
 
 Routes execute on 5001 for proper .env connections, otherwise 5000
