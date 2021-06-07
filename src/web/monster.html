@@ -20,7 +20,7 @@
                     <th>monsterName </th>
                 </tr>
             </thead>
-            <tbody id='weaponBody'>
+            <tbody id='monsterBody'>
 
             </tbody>
         </table>
@@ -33,15 +33,11 @@ async function getText(file) {
     let x = await fetch(file);
     let y = await x.json();
 
-    console.log(y.recordset)
-
-    var body = document.getElementById("weaponBody") 
+    var body = document.getElementById("monsterBody") 
 
     y.recordset.forEach( wep => {
-        console.log(wep)
         var row = document.createElement("tr");
         Object.keys(wep).forEach( key => {
-            console.log(key, wep[key])
             var iCol = document.createElement("td");
             iCol.innerHTML = wep[key];
             row.appendChild(iCol);

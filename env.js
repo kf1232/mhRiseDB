@@ -1,5 +1,8 @@
 const dotenv = require('dotenv').config()
-const assert = require( "assert" );
+const assert = require("assert");
+
+console.log(process.env.DB_User+' env.DB_USER')
+
 
 const PORT    = process.env.PORT
 
@@ -19,6 +22,7 @@ const CONFIG = {
     }
 }
 
+/*
 assert(PORT, 'PORT configuration is required')
 
 assert(CONFIG, 'CONFIG must be a valid configuration:')
@@ -26,7 +30,7 @@ assert(CONFIG, 'CONFIG must be a valid configuration:')
   assert(CONFIG.DB_PASS, 'DB_PASS failed to populate')
   assert(CONFIG.DB_DATA, 'DB_DATA failed to populate')
   assert(CONFIG.DB_HOST, 'DB_HOST failed to populate')
-
+*/
 module.exports = {
     PORT,
     CONFIG

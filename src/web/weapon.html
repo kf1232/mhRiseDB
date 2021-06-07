@@ -36,6 +36,7 @@
 
 <script>
     getText('http://localhost:5001/weapons');
+    
     async function getText(file) {
         let x = await fetch(file);
         let y = await x.json();
