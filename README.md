@@ -1,4 +1,4 @@
-[Postman Team Link](https://app.getpostman.com/join-team?invite_code=c440c4f2dc89c85e505253e71c3164de) 
+[Postman Team Link](https://app.getpostman.com/join-team?invite_code=91649c0f56ec356263aee4d8160a33ec&ws=6b97234e-7bfa-43ff-9247-5d1a329f4440) 
 
 SETUP:
 Install DB + DMBS systems, configure .env copy to .env
