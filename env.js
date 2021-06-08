@@ -1,6 +1,7 @@
 const dotenv = require('dotenv').config()
 
 const PORT    = process.env.PORT
+const ADDRESS = `http://localhost:`+PORT
 
 /*  Read config */
 const RO_CONFIG = {
@@ -53,9 +54,12 @@ const LO_CONFIG = {
   }
 }
 
+
+
 module.exports = {
     PORT,
     RO_CONFIG,
     WR_CONFIG,
-    LO_CONFIG
+    LO_CONFIG,
+    ADDRESS
 }
