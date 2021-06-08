@@ -1,4 +1,8 @@
+const { response } = require('express')
 const express = require('express')
+const fs = require('fs')
+let http = require('http')
+
 var dbAPI = express.Router()
 
 /*----------------------------------------------------------------------*/
@@ -6,8 +10,11 @@ var dbAPI = express.Router()
 /*----------------------------------------------------------------------*/
 
 dbAPI.get('/', (req, res) => {
-    res.end(
-`endpoints:
+    res.end(`endpoints:
+    /
+
+    /info
+
     /items
 
     /monsters 
@@ -15,8 +22,7 @@ dbAPI.get('/', (req, res) => {
     /weaponTypes
 
     /weapons
-        =>/GS
-        =>/SH`)
+     ======>/[WeaponTypeID]`)
 })
 
 /*----------------------------------------------------------------------*/
